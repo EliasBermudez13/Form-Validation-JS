@@ -11,9 +11,6 @@ window.onload = function() {
   var form = document.getElementById("form");
 
   form.addEventListener("submit", prueba);
-  let allValues = document.querySelectorAll(
-    "input[type=text], input[type=number], textarea"
-  );
 
   // Inputs
   let amount = document.getElementById("inputAmount");
@@ -42,16 +39,6 @@ window.onload = function() {
 
   function prueba(e) {
     e.preventDefault();
-    // for (var values of allValues) {
-    //   if (values.value === "") {
-    //     values.style.background = "pink";
-    //     alertError.classList.remove("invisible");
-    //   } else {
-    //     // console.log("All good, form send");
-    //     values.style.background = "#fff";
-    //     // alertError.classList.add("invisible");
-    //   }
-    // }
     if (amount.value === "") {
       amountErr.classList.remove("invisible");
       amount.style.background = "pink";
